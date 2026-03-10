@@ -27,6 +27,8 @@ FROM scratch
 
 LABEL maintainer="Jonathan Gao <gsmlg.com@gmail.com>"
 
+LABEL org.opencontainers.image.source="https://github.com/gsmlg-ci/geoip2"
+
 COPY --from=builder /app/geoip2 /geoip2
 
 CMD ["-h"]
